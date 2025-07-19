@@ -1,0 +1,436 @@
+*{  margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: Roboto Flex;
+}
+body{
+    height: 100vh;
+    width: 100%;    
+}
+
+@media only screen and (max-width: 300px) {
+body{
+    display: none;
+}
+}
+nav {
+    background: white;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  nav .mainMenu {
+    display: flex;
+    list-style: none;
+  }
+  nav .mainMenu li a {
+    display: inline-block;
+    padding: 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+    font-size: 15px;
+    transition: 0.2s ease;
+  }
+  nav .mainMenu li a:hover {
+    background: rgb(90, 3, 90);
+    color: white;
+    border-radius: 20px;
+  }
+  nav .openMenu {
+    font-size: 2rem;
+    margin: 20px;
+    display: none;
+    cursor: pointer;
+  }
+  nav .mainMenu .closeMenu,
+  .icons i {
+    font-size: 2rem;
+    display: none;
+    cursor: pointer;
+  }
+  nav .logo {
+    margin: 6px;
+    cursor: pointer;
+    text-transform: uppercase;
+  }
+  nav .logo img{
+    height: 40px;
+    width: auto;
+  }
+  
+  @media (max-width: 800px) {
+    nav .mainMenu {
+      height: 100vh;
+      position: fixed;
+      top: 0px;
+      right: 0px;
+      left: 0px;
+      z-index: 10;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background: white;
+      transition: top 1s ease 0s;
+      display: none;
+    }
+    nav .mainMenu .closeMenu {
+      display: block;
+      position: absolute;
+      top: 20px;
+      right: 20px;
+    }
+    nav .openMenu {
+      display: block;
+    }
+    nav .mainMenu li a:hover {
+      background: none;
+      color: rgb(90, 3, 90);
+    }
+    .icons i {
+      display: inline-block;
+      padding: 12px;
+    }
+    
+  }
+.Talk-to-Sales-Part1{
+    height: 400px;
+    width: 100%;
+    background-color: rgb(90, 3, 90);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    color: white;
+    padding-top: 250px;
+}
+.Talk-to-Sales-Part1-Left{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    transform: translateY(-150px);
+    justify-content: center;
+    height: 650px;
+    margin-top: 100px;
+}
+.Talk-to-Sales-Part1-Left h2{
+    font-size: 40px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.Talk-to-Sales-Part1-Left p{
+    font-size: 13px;
+}
+.Form{
+    background-color: white;
+    color: black;
+    height: 800px;
+    width: 500px;
+    padding: 32px;
+    font-size: 10px;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    border-radius: 20px;
+    transform: translateY(35px);
+    box-shadow:
+    0px 8px 10px rgba(0, 0, 0, 0.2),     /* Bottom */
+   -8px 0px 10px rgba(0, 0, 0, 0.2),     /* Left */
+    8px 0px 10px rgba(0, 0, 0, 0.2);    /*Right*/
+}
+.Talk-to-Sales-Part1-Right{
+    transform: translateY(100px);
+}
+#Form-Elements{
+    display: flex;
+    gap: 5px;
+}
+#Form-Elements p, #required-field{
+    color: red;
+    font-weight: 500;
+    font-size: 9px;
+}
+input, text, option, select{
+    width: 100%;
+    height: 60px;
+    font-size: 11px;
+    border-radius: 3px;
+    border: 1px solid black;
+    padding-left: 10px;
+}
+#optional-box{
+    width: 100%;
+    height: 150px;
+}
+button{
+    width: 150px;
+    height: 100px;
+    color: white;
+    background-color: rgb(90, 3, 90);
+    border: none;
+    border-radius: 5px;
+}
+#Company-Reputation{
+    transform: translateY(165px);
+    color: black;
+    font-size: 25px;
+}
+#Company-Reputation img{
+    height: 45px;
+    width: auto;
+    padding-top: 15px;
+}
+.comp-link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding-bottom: 25px;
+    font-size: 15px;
+}
+#instagram, #linkedin, #youtube, #twitter, #tiktok, #facebook{
+    cursor: pointer;
+}
+#instagram:hover, #linkedin:hover, #youtube:hover, #twitter:hover, #tiktok:hover, #facebook:hover{
+    color: blue;
+}
+footer{
+    text-align: center;
+    padding-top: 500px;
+    padding-bottom: 10px;
+    font-size: 12px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+}
+@media only screen and (min-width: 600px) and (max-width: 1005px) {
+
+.Talk-to-Sales-Part1{
+    height: 800px;
+    width: 100%;
+    background-color: rgb(90, 3, 90);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    color: white;
+    padding-top: 250px;
+}
+.Talk-to-Sales-Part1-Left{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;    
+    justify-content: center;
+    height: 500px;
+    margin-top: 100px;
+    transform: translateY(100px);
+}
+.Talk-to-Sales-Part1-Left h2{
+    font-size: 40px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.Talk-to-Sales-Part1-Left p{
+    font-size: 13px;
+}
+.Talk-to-Sales-Part1-Right{transform: translateY(-200px);}
+.Form{
+    background-color: white;
+    color: black;
+    height: 800px;
+    width: 500px;
+    margin-top: 100px;
+    padding: 32px;
+    font-size: 10px;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    border-radius: 20px;
+    box-shadow:
+    0px 8px 10px rgba(0, 0, 0, 0.2),     /* Bottom */
+   -8px 0px 10px rgba(0, 0, 0, 0.2),     /* Left */
+    8px 0px 10px rgba(0, 0, 0, 0.2);    /*Right*/
+    transform: translateY(300px);
+}
+#Form-Elements{
+    display: flex;
+    gap: 5px;
+}
+#Form-Elements p, #required-field{
+    color: red;
+    font-weight: 500;
+    font-size: 9px;
+}
+input, text, option, select{
+    width: 100%;
+    height: 60px;
+    font-size: 11px;
+    border-radius: 3px;
+    border: 1px solid black;
+    padding-left: 10px;
+}
+#optional-box{
+    width: 100%;
+    height: 150px;
+}
+button{
+    width: 150px;
+    height: 100px;
+    color: white;
+    background-color: rgb(90, 3, 90);
+    border: none;
+    border-radius: 5px;
+}
+#Company-Reputation{
+    transform: translateY(50px);
+    color: white;
+    font-size: 25px;
+    text-align: center;
+}
+#Company-Reputation img{
+    height: 45px;
+    width: auto;
+    padding-top: 15px;
+}
+.comp-link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding-bottom: 25px;
+    font-size: 15px;
+}
+#instagram, #linkedin, #youtube, #twitter, #tiktok, #facebook{
+    cursor: pointer;
+}
+#instagram:hover, #linkedin:hover, #youtube:hover, #twitter:hover, #tiktok:hover, #facebook:hover{
+    color: blue;
+}
+footer{
+    text-align: center;
+    padding-top: 900px;
+    padding-bottom: 10px;
+    font-size: 12px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+}
+}
+@media only screen and (min-width: 300px) and (max-width: 600px) {
+
+.Talk-to-Sales-Part1{
+    height: 700px;
+    width: 100%;
+    background-color: rgb(90, 3, 90);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    color: white;
+    padding-top: 250px;
+}
+.Talk-to-Sales-Part1-Left{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    transform: translateY(200px);
+    justify-content: center;
+    height: 650px;
+    margin-top: 100px;
+}
+.Talk-to-Sales-Part1-Left h2{
+    text-align: center;
+    font-size: 40px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.Talk-to-Sales-Part1-Left p{
+    font-size: 13px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.Form{
+    background-color: white;
+    color: black;
+    height: 800px;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 100px;
+    padding: 20px;
+    font-size: 10px;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    border-radius: 20px;
+    transform: translateY(35px);
+    box-shadow:
+    0px 8px 10px rgba(0, 0, 0, 0.2),     /* Bottom */
+   -8px 0px 10px rgba(0, 0, 0, 0.2),     /* Left */
+    8px 0px 10px rgba(0, 0, 0, 0.2);    /*Right*/
+    transform: translateY(150px);
+}
+#Form-Elements{
+    display: flex;
+    gap: 5px;
+}
+#Form-Elements p, #required-field{
+    color: red;
+    font-weight: 500;
+    font-size: 9px;
+}
+input, text, option, select{
+    width: 100%;
+    height: 60px;
+    font-size: 11px;
+    border-radius: 3px;
+    border: 1px solid black;
+    padding-left: 10px;
+}
+#optional-box{
+    width: 100%;
+    height: 150px;
+}
+button{
+    width: 150px;
+    height: 100px;
+    color: white;
+    background-color: rgb(90, 3, 90);
+    border: none;
+    border-radius: 5px;
+}
+#Company-Reputation{
+    transform: translateY(50px);
+    color: white;
+    font-size: 25px;
+    text-align: center;
+}
+#Company-Reputation img{
+    height: 45px;
+    width: auto;
+    padding-top: 15px;
+}
+.comp-link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding-bottom: 25px;
+    font-size: 15px;
+}
+#instagram, #linkedin, #youtube, #twitter, #tiktok, #facebook{
+    cursor: pointer;
+}
+#instagram:hover, #linkedin:hover, #youtube:hover, #twitter:hover, #tiktok:hover, #facebook:hover{
+    color: blue;
+}
+footer{
+    text-align: center;
+    padding: 750px 10px 10px 10px;
+    font-size: 12px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+}
+}

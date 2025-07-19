@@ -1,0 +1,1726 @@
+*{  margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: Roboto Flex;
+}
+body{
+    height: 100vh;
+    width: 100%;    
+}
+@media only screen and (max-width: 300px) {
+body{
+    display: none;
+}
+}
+nav {
+    background: white;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  nav .mainMenu {
+    display: flex;
+    list-style: none;
+  }
+  nav .mainMenu li a {
+    display: inline-block;
+    padding: 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+    font-size: 15px;
+    transition: 0.2s ease;
+  }
+  nav .mainMenu li a:hover {
+    background: rgb(90, 3, 90);
+    color: white;
+    border-radius: 20px;
+  }
+  nav .openMenu {
+    font-size: 2rem;
+    margin: 20px;
+    display: none;
+    cursor: pointer;
+  }
+  nav .mainMenu .closeMenu,
+  .icons i {
+    font-size: 2rem;
+    display: none;
+    cursor: pointer;
+  }
+  nav .logo {
+    margin: 6px;
+    cursor: pointer;
+    text-transform: uppercase;
+  }
+  nav .logo img{
+    height: 40px;
+    width: auto;
+  }
+  @media (max-width: 800px) {
+    nav .mainMenu {
+      height: 100vh;
+      position: fixed;
+      top: 0px;
+      right: 0px;
+      left: 0px;
+      z-index: 10;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background: white;
+      transition: top 1s ease 0s;
+      display: none;
+    }
+    nav .mainMenu .closeMenu {
+      display: block;
+      position: absolute;
+      top: 20px;
+      right: 20px;
+    }
+    nav .openMenu {
+      display: block;
+    }
+    nav .mainMenu li a:hover {
+      background: none;
+      color: rgb(90, 3, 90);
+    }
+    .icons i {
+      display: inline-block;
+      padding: 12px;
+    }
+  }
+
+
+.HomePage-Part1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.HomePage-Part1 video{
+    height: 50px;
+    width: auto;
+    margin: 20px;
+}
+.HomePage-Part1 p{
+    font-size: 1rem;
+    margin: 10px;
+}
+.HomePage-Part1-Button{
+    margin: 25px;
+}
+.HomePage-Part1-Button button{
+    height: 50px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    padding: 5px;
+}
+#Get-Started-btn1{
+    width: 150px;
+    background-color: rgb(90, 3, 90);
+    color: white;
+    border-radius: 5px;
+    border: 2px solid rgb(90, 3, 90);
+    cursor: pointer;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+#Find-Sub-btn1{
+    width: 250px;
+    color: rgb(90, 3, 90);
+    border: 2px solid rgb(90, 3, 90);
+    border-radius: 5px;
+    background-color: white;
+    cursor: pointer;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+#Find-Sub-btn1:hover{
+    border: 3px solid rgb(90, 3, 90);
+}
+.HomePage-Part1-Complogo{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 5rem;
+    margin: 40px 10px;
+}
+#logo-gm{
+    height: 35px;
+    width: auto;
+}
+#logo-openai{
+    height: 19px;
+    width: auto;
+}
+#logo-target{
+    height: 37.5px;
+    width: auto;
+}
+#logo-paramount{
+    height: 38px;
+    width: auto;
+}
+#logo-stripe{
+    height: 28.5px;
+    width: auto;
+}
+#logo-ibm{
+    height: 26.5px;
+    width: auto;
+}
+.HomePage-Part1-Video{
+    margin: 0 auto;
+}
+.HomePage-Part1-Video video{
+    height: auto;
+    width: 900px;
+    border-radius: 10px;
+    margin: 0 auto;
+}
+.HomePage-Part2 h1{
+    margin-top: 25px;
+    font-size: 3rem;
+    font-weight: 650;
+    text-align: center;
+    padding: 20px 200px;
+}
+.comp-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    margin-top: 10px;
+    font-size: 1rem;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.Collaboration-Part{
+    display: flex;
+    justify-content: center;
+    padding: 0px 50px;
+    gap: 100px;
+    position: relative;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    width: 1050px;
+    height: 300px;
+    margin: 0 auto;
+    background-color: #f8eefe;
+    border: 10px solid #f8eefe;
+    border-radius: 20px;
+    margin-top: 50px;
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.3);
+}
+.Collaboration-Heading{
+    display: flex;
+    gap: 1rem;
+    padding-bottom: 20px;
+    font-size: 11px;
+}
+.Collaboration-Detail1{
+    padding-bottom: 20px;
+    font-size: 20px;
+}
+.Collaboration-Detail1 h3{
+    font-weight: 600;
+}
+.Collaboration-Detail2{
+    padding-bottom: 20px;
+}
+.Collaboration-Detail2 h6{
+    font-size: 12px;
+    font-weight: 350;
+}
+.Collaboration-Detail3{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-top: 20px ;
+}
+#Percent1{
+    font-size: 40px;
+    font-weight: 600;
+    color: rgb(177, 64, 177);
+}
+#Collaboration-Info h6{
+    font-size: 12px;
+    font-weight: 350;
+}
+.Collaboration-Video video{
+    height: 281px;
+    width: 440px;
+    border-radius: 10px;
+}
+.Project-Management-Part{
+    display: flex;
+    justify-content: center;
+    padding: 0px 50px;
+    gap: 100px;
+    position: relative;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    width: 1050px;
+    height: 300px;
+    margin: 0 auto;
+    background-color: #f8eefe;
+    border: 10px solid #f8eefe;
+    border-radius: 20px;
+    margin-top: 50px;
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.3);
+}
+.Project-Management-Heading{
+    display: flex;
+    gap: 1rem;
+    padding-bottom: 20px;
+    font-size: 11px;
+}
+.Project-Management-Detail1{
+    padding-bottom: 20px;
+    font-size: 20px;
+}
+.Project-Management-Detail1 h3{
+    font-weight: 600;
+}
+.Proeject-Management-Detail2{
+    padding-bottom: 20px;
+}
+.Project-Management-Detail2 h6{
+    font-size: 12px;
+    font-weight: 350;
+}
+.Project-Management-Detail3{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-top: 20px ;
+}
+#Percent2{
+    font-size: 40px;
+    font-weight: 600;
+    color: rgb(177, 64, 177);
+}
+#Project-Management-Info h6{
+    font-size: 12px;
+    font-weight: 350;
+}
+.Project-Management-Video video{
+    height: 281px;
+    width: 440px;
+    border-radius: 10px;
+}
+.Slack-AI-Part{
+    display: flex;
+    justify-content: center;
+    padding: 0px 50px;
+    gap: 100px;
+    position: relative;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    width: 1050px;
+    height: 300px;
+    margin: 0 auto;
+    background-color: #f8eefe;
+    border: 10px solid #f8eefe;
+    border-radius: 20px;
+    margin-top: 50px;
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.3);
+}
+
+.Slack-AI-Heading{
+    display: flex;
+    gap: 1rem;
+    padding-bottom: 20px;
+    font-size: 11px;
+}
+.Slack-AI-Detail1{
+    padding-bottom: 20px;
+    font-size: 20px;
+}
+.Slack-AI-Detail1 h3{
+    font-weight: 600;
+}
+.Integration-Detail2{
+    padding-bottom: 20px;
+}
+.Slack-AI-Detail2 h6{
+    font-size: 12px;
+    font-weight: 350;
+}
+.Slack-AI-Detail3{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-top: 20px ;
+}
+#Percent3{
+    font-size: 40px;
+    font-weight: 600;
+    color: rgb(177, 64, 177);
+}
+#Slack-AI-Info h6{
+    font-size: 12px;
+    font-weight: 350;
+}
+.Slack-AI-Video video{
+    height: 281px;
+    width: 440px;
+    border-radius: 10px;
+}
+.Integrations-Part{
+    display: flex;
+    justify-content: center;
+    padding: 0px 50px;
+    gap: 100px;
+    position: relative;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    width: 1050px;
+    height: 300px;
+    margin: 0 auto;
+    background-color: #f8eefe;
+    border: 10px solid #f8eefe;
+    border-radius: 20px;
+    margin-top: 50px;
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.3);
+}
+.Integrations-Heading{
+    display: flex;
+    gap: 1rem;
+    padding-bottom: 20px;
+    font-size: 11px;
+}
+.Integrations-Detail1{
+    padding-bottom: 20px;
+    font-size: 20px;
+}
+.Integrations-Detail1 h3{
+    font-weight: 600;
+}
+.Integration-Detail2{
+    padding-bottom: 20px;
+}
+.Integrations-Detail2 h6{
+    font-size: 12px;
+    font-weight: 350;
+}
+.Integrations-Detail3{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-top: 20px ;
+}
+#Percent4{
+    font-size: 40px;
+    font-weight: 600;
+    color: rgb(177, 64, 177);
+}
+#Integrations-Info h6{
+    font-size: 12px;
+    font-weight: 350;
+}
+.Integrations-Video video{
+    height: 281px;
+    width: 440px;
+    border-radius: 10px;
+}
+.HomePage-Part3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 1050px;
+    height: 680px;
+    padding: 10px 50px;
+    background: linear-gradient(to bottom, 
+        #e4f8fe,   /* Light Blue */
+        #efe0fd,   /* Light Pink */
+        #ffffff    /* White */
+    );
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border-radius: 20px;
+    box-shadow:
+    5px 0 10px rgba(0, 0, 0, 0.2),   /* Right */
+    -5px 0 10px rgba(0, 0, 0, 0.2),   /* Left */
+    0 5px 10px rgba(0, 0, 0, 0.2);   /* Bottom */
+
+}
+.Part3-Heading1{
+    display: flex;
+    align-self: flex-start;
+    gap: 20px;
+    font-size: 10px;
+    padding: 20px 0px;
+}
+.HomePage-Part3 h2{
+    align-self: flex-start;
+    font-size: 45px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 650;
+    padding-bottom: 20px;
+}
+.HomePage-Part3 p{
+    align-self: flex-start;
+    font-size: 17px;
+}
+.HomePage-Part3 video{
+    margin-top: 30px;
+    height: 450px;
+    width: auto;
+}
+.top-curved-background {
+    background-color: rgb(90, 3, 90);
+    height: 350px;
+    width: 100%;
+    border-top-left-radius: 50% 100px;
+    border-top-right-radius: 50% 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 40px;
+    color: white;
+    text-align: center;
+}
+.HomePage-Part4 h2{
+    color: black;
+    font-size: 50px;
+    font-weight: 600;
+    text-align: center;
+}
+.top-curved-background h3{
+    padding: 50px;
+    font-size: 35px;
+}
+.Bussiness-Detail{
+    display: flex;
+    gap: 150px;
+    padding-top: 20px;
+}
+#Bussiness-Part1 h5, #Bussiness-Part2 h5, #Bussiness-Part3 h5{
+    font-size: 60px;
+    color: rgb(255, 120, 255);
+    padding-bottom: 10px;
+}
+#Bussiness-Part1 p, #Bussiness-Part2 p, #Bussiness-Part3 p{
+    font-size: 20px;
+    font-weight: bold;
+}
+.HomePage-Part5{
+    background-color: rgb(255, 224, 255);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+.HomePage-Part5 h2{
+    font-size: 35px;
+    font-weight: 600;
+    padding-bottom: 30px;
+    padding-top: 30px;
+}
+#Leadership-Details{
+    padding-top: 20px;
+    padding-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+#Leadership-Details img{
+    height: 150px;
+    width: auto;
+}
+#Peoples-Love{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+#Box{
+    height: 130px;
+    width: 200px;
+    background-color: rgb(90, 3, 90);
+    text-align: center;
+    border-radius: 20px;
+    padding: 10px 20px;
+}
+.PL-Box1, .PL-Box2{
+    display: flex;
+    gap: 20px;
+}
+#Box h3{
+    font-size: 40px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding-bottom: 10px;
+    color: white;
+}
+#Box p{
+    font-size: 15px;
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.Box-Effect{
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+.Box-Effect:hover {
+    transform: scale(1.08); /* Bigger pop */
+    box-shadow:
+    0 12px 24px rgba(0, 0, 0, 0.4),   /* Main shadow */
+    0 0 10px rgba(0, 0, 0, 0.6), /* Outer glow */
+    0 0 20px rgba(0, 0, 0, 0.4); /* Soft glow */
+}
+.HomePage-Part6{
+    /*background-color: rgb(255, 224, 255);*/
+    background: linear-gradient(to bottom, rgb(255, 224, 255), white);
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.HomePage-Part6 h3{
+    font-size: 40px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: black;
+}
+.HomePage-Part6 button{
+    height: 40px;
+    width: 150px;
+    font-size: 0.9rem;
+    font-weight: 550;
+    background-color: white;
+    border: none;
+    border-radius: 5px;
+}
+#Get-Started-btn2{
+    color: rgb(90, 3, 90);
+    border: 1px solid rgb(90, 3, 90);
+}
+#Talk-to-Sales-btn2{
+    color: white;
+    background-color: rgb(90, 3, 90);
+    cursor: pointer;
+}
+#Get-Started-btn2:hover{
+    border: 2px solid rgb(90, 3, 90);
+}
+.comp-link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding-bottom: 25px;
+    font-size: 15px;
+}
+#instagram, #linkedin, #youtube, #twitter, #tiktok, #facebook{
+    cursor: pointer;
+}
+#instagram:hover, #linkedin:hover, #youtube:hover, #twitter:hover, #tiktok:hover, #facebook:hover{
+    color: blue;
+}
+footer{
+    text-align: center;
+    padding-top: 200px;
+    padding-bottom: 10px;
+    font-size: 12px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+}
+@media only screen and (min-width: 600px) and (max-width: 1065px) {
+*{  margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: Roboto Flex;
+}
+body{
+    height: 100vh;
+    width: 100%;    
+}
+.HomePage-Part1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.HomePage-Part1 video{
+    height: 35px;
+    width: auto;
+    margin: 20px;
+}
+.HomePage-Part1 p{
+    font-size: 1rem;
+    margin: 10px;
+}
+.HomePage-Part1-Button{
+    margin: 25px;
+}
+.HomePage-Part1-Button button{
+    height: 50px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    padding: 5px;
+}
+#Get-Started-btn1{
+    width: 150px;
+    background-color: rgb(90, 3, 90);
+    color: white;
+    border-radius: 5px;
+    border: 2px solid rgb(90, 3, 90);
+    cursor: pointer;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+#Find-Sub-btn1{
+    width: 250px;
+    color: rgb(90, 3, 90);
+    border: 2px solid rgb(90, 3, 90);
+    border-radius: 5px;
+    background-color: white;
+    cursor: pointer;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+#Find-Sub-btn1:hover{
+    border: 3px solid rgb(90, 3, 90);
+}
+.HomePage-Part1-Complogo{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 45px;
+    margin: 40px 10px;
+}
+#logo-gm{
+    height: 35px;
+    width: auto;
+}
+#logo-openai{
+    height: 19px;
+    width: auto;
+}
+#logo-target{
+    height: 37.5px;
+    width: auto;
+}
+#logo-paramount{
+    height: 38px;
+    width: auto;
+}
+#logo-stripe{
+    height: 28.5px;
+    width: auto;
+}
+#logo-ibm{
+    height: 26.5px;
+    width: auto;
+}
+.HomePage-Part1-Video{
+    margin: 0 auto;
+}
+.HomePage-Part1-Video video{
+    height: 350px;
+    width: auto;
+    border-radius: 10px;
+    margin: 0 auto;
+}
+.HomePage-Part2 h1{
+    margin-top: 25px;
+    font-size: 40px;
+    font-weight: 650;
+    text-align: center;
+    padding: 20px;
+}
+.comp-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 0px;
+    margin-top: 10px;
+    font-size: 11px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.Collaboration-Part{
+    display: flex;
+    justify-content: center;
+    padding: 0px 20px;
+    gap: 50px;
+    position: relative;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    width: 590px;
+    height: 250px;
+    margin: 0 auto;
+    background-color: #f8eefe;
+    border: 10px solid #f8eefe;
+    border-radius: 20px;
+    margin-top: 50px;
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.3);
+}
+.Collaboration-Heading{
+    display: flex;
+    gap: 1rem;
+    padding-bottom: 20px;
+    font-size: 11px;
+}
+.Collaboration-Detail1{
+    padding-bottom: 20px;
+    font-size: 20px;
+}
+.Collaboration-Detail1 h3{
+    font-weight: 500;
+}
+.Collaboration-Detail2{
+    padding-bottom: 20px;
+}
+.Collaboration-Detail2 h6{
+    font-size: 10px;
+    font-weight: 350;
+}
+.Collaboration-Detail3{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-top: 20px ;
+}
+#Percent1{
+    font-size: 35px;
+    font-weight: 600;
+    color: rgb(177, 64, 177);
+}
+#Collaboration-Info h6{
+    font-size: 10px;
+    font-weight: 350;
+}
+.Collaboration-Video video{
+    height: 250px;
+    width: 200px;
+    border-radius: 10px;
+}
+.Project-Management-Part{
+    display: flex;
+    justify-content: center;
+    padding: 0px 20px;
+    gap: 50px;
+    position: relative;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    width: 590px;
+    height: 250px;
+    margin: 0 auto;
+    background-color: #f8eefe;
+    border: 10px solid #f8eefe;
+    border-radius: 20px;
+    margin-top: 50px;
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.3);
+}
+.Project-Management-Heading{
+    display: flex;
+    gap: 1rem;
+    padding-bottom: 20px;
+    font-size: 11px;
+}
+.Project-Management-Detail1{
+    padding-bottom: 20px;
+    font-size: 20px;
+}
+.Project-Management-Detail1 h3{
+    font-weight: 500;
+}
+.Proeject-Management-Detail2{
+    padding-bottom: 20px;
+}
+.Project-Management-Detail2 h6{
+    font-size: 10px;
+    font-weight: 350;
+}
+.Project-Management-Detail3{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-top: 20px ;
+}
+#Percent2{
+    font-size: 35px;
+    font-weight: 600;
+    color: rgb(177, 64, 177);
+}
+#Project-Management-Info h6{
+    font-size: 10px;
+    font-weight: 350;
+}
+.Project-Management-Video video{
+    height: 250px;
+    width: 200px;
+    border-radius: 10px;
+}
+.Slack-AI-Part{
+    display: flex;
+    justify-content: center;
+    padding: 0px 20px;
+    gap: 50px;
+    position: relative;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    width: 590px;
+    height: 250px;
+    margin: 0 auto;
+    background-color: #f8eefe;
+    border: 10px solid #f8eefe;
+    border-radius: 20px;
+    margin-top: 50px;
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.3);
+}
+.Slack-AI-Heading{
+    display: flex;
+    gap: 1rem;
+    padding-bottom: 20px;
+    font-size: 11px;
+}
+.Slack-AI-Detail1{
+    padding-bottom: 20px;
+    font-size: 20px;
+}
+.Slack-AI-Detail1 h3{
+    font-weight: 500;
+}
+.Integration-Detail2{
+    padding-bottom: 20px;
+}
+.Slack-AI-Detail2 h6{
+    font-size: 10px;
+    font-weight: 350;
+}
+.Slack-AI-Detail3{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-top: 20px ;
+}
+#Percent3{
+    font-size: 35px;
+    font-weight: 600;
+    color: rgb(177, 64, 177);
+}
+#Slack-AI-Info h6{
+    font-size: 10px;
+    font-weight: 350;
+}
+.Slack-AI-Video video{
+    height: 250px;
+    width: 200px;
+    border-radius: 10px;
+}
+.Integrations-Part{
+    display: flex;
+    justify-content: center;
+    padding: 0px 20px;
+    gap: 50px;
+    position: relative;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    width: 590px;
+    height: 250px;
+    margin: 0 auto;
+    background-color: #f8eefe;
+    border: 10px solid #f8eefe;
+    border-radius: 20px;
+    margin-top: 50px;
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.3);
+}
+.Integrations-Heading{
+    display: flex;
+    gap: 1rem;
+    padding-bottom: 20px;
+    font-size: 11px;
+}
+.Integrations-Detail1{
+    padding-bottom: 20px;
+    font-size: 20px;
+}
+.Integrations-Detail1 h3{
+    font-weight: 500;
+}
+.Integration-Detail2{
+    padding-bottom: 20px;
+}
+.Integrations-Detail2 h6{
+    font-size: 10px;
+    font-weight: 350;
+}
+.Integrations-Detail3{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-top: 20px ;
+}
+#Percent4{
+    font-size: 35px;
+    font-weight: 600;
+    color: rgb(177, 64, 177);
+}
+#Integrations-Info h6{
+    font-size: 10px;
+    font-weight: 350;
+}
+.Integrations-Video video{
+    height: 250px;
+    width: 200px;
+    border-radius: 10px;
+}
+.HomePage-Part3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 590px;
+    height: 590px;
+    padding: 10px 30px;
+    background: linear-gradient(to bottom, 
+        #e4f8fe,   /* Light Blue */
+        #efe0fd,   /* Light Pink */
+        #ffffff    /* White */
+    );
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border-radius: 20px;
+    box-shadow:
+    5px 0 10px rgba(0, 0, 0, 0.2),   /* Right */
+    -5px 0 10px rgba(0, 0, 0, 0.2),   /* Left */
+    0 5px 10px rgba(0, 0, 0, 0.2);   /* Bottom */
+
+}
+.Part3-Heading1{
+    display: flex;
+    align-self: flex-start;
+    gap: 20px;
+    font-size: 10px;
+    padding: 20px 0px;
+}
+.HomePage-Part3 h2{
+    align-self: flex-start;
+    font-size: 27px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 650;
+    padding-bottom: 20px;
+}
+.HomePage-Part3 p{
+    align-self: flex-start;
+    font-size: 15px;
+}
+.HomePage-Part3 video{
+    margin-top: 0px;
+    height: 430px;
+    width: 540px;
+}
+.top-curved-background {
+    background-color: rgb(90, 3, 90);
+    height: 350px;
+    width: 100%;
+    border-top-left-radius: 50% 100px;
+    border-top-right-radius: 50% 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 40px;
+    color: white;
+    text-align: center;
+}
+.HomePage-Part4 h2{
+    color: black;
+    font-size: 38px;
+    font-weight: 600;
+    text-align: center;
+}
+.top-curved-background h3{
+    padding: 50px;
+    font-size: 30px;
+    transform: translateY(60px);
+}
+.Bussiness-Detail{
+    display: flex;
+    gap: 50px;
+    padding-top: 20px;
+}
+#Bussiness-Part1 h5, #Bussiness-Part2 h5, #Bussiness-Part3 h5{
+    font-size: 55px;
+    color: rgb(255, 120, 255);
+    padding-bottom: 10px;
+}
+#Bussiness-Part1 p, #Bussiness-Part2 p, #Bussiness-Part3 p{
+    font-size: 15px;
+    font-weight: bold;
+}
+.HomePage-Part5{
+    background-color: rgb(255, 224, 255);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+.HomePage-Part5 h2{
+    font-size: 32px;
+    font-weight: 600;
+    padding-bottom: 30px;
+    padding-top: 30px;
+}
+#Leadership-Details{
+    padding-top: 20px;
+    padding-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+#Leadership-Details img{
+    height: 90px;
+    width: auto;
+}
+#Peoples-Love{
+    display: flex;
+    gap: 10px;
+}
+#Box{
+    height: 140px;
+    width: 155px;
+    background-color: rgb(90, 3, 90);
+    text-align: center;
+    border-radius: 20px;
+    padding: 10px 20px;
+}
+.PL-Box1, .PL-Box2{
+    display: flex;
+    gap: 20px;
+}
+#Box h3{
+    font-size: 40px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding-bottom: 10px;
+    color: white;
+}
+#Box p{
+    font-size: 15px;
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.Box-Effect{
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+.Box-Effect:hover {
+    transform: scale(1.01); /* Bigger pop */
+    box-shadow:
+    0 12px 24px rgba(0, 0, 0, 0.4),   /* Main shadow */
+    0 0 10px rgba(0, 0, 0, 0.6), /* Outer glow */
+    0 0 20px rgba(0, 0, 0, 0.4); /* Soft glow */
+}
+.HomePage-Part6{
+    /*background-color: rgb(255, 224, 255);*/
+    background: linear-gradient(to bottom, rgb(255, 224, 255), white);
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.HomePage-Part6 h3{
+    font-size: 31px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: black;
+}
+.HomePage-Part6 button{
+    height: 40px;
+    width: 150px;
+    font-size: 0.9rem;
+    font-weight: 550;
+    background-color: white;
+    border: none;
+    border-radius: 5px;
+}
+#Get-Started-btn2{
+    color: rgb(90, 3, 90);
+    border: 1px solid rgb(90, 3, 90);
+}
+#Talk-to-Sales-btn2{
+    color: white;
+    background-color: rgb(90, 3, 90);
+    cursor: pointer;
+}
+#Get-Started-btn2:hover{
+    border: 2px solid rgb(90, 3, 90);
+}
+.comp-link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding-bottom: 25px;
+    font-size: 15px;
+}
+#instagram, #linkedin, #youtube, #twitter, #tiktok, #facebook{
+    cursor: pointer;
+}
+#instagram:hover, #linkedin:hover, #youtube:hover, #twitter:hover, #tiktok:hover, #facebook:hover{
+    color: blue;
+}
+footer{
+    text-align: center;
+    padding-top: 200px;
+    padding-bottom: 10px;
+    font-size: 12px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+}
+}
+@media only screen and (min-width: 300px) and (max-width: 600px) {
+*{  margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: Roboto Flex;
+}
+body{
+    height: 100vh;
+    width: 100%;    
+}
+.HomePage-Part1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.HomePage-Part1 video{
+    height: 1.25rem;
+    width: auto;
+    margin: 30px 0px 20px 0px;
+}
+.HomePage-Part1 p{
+    font-size: 11px;
+    margin: 0 auto;
+}
+.HomePage-Part1-Button{
+    margin: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.HomePage-Part1-Button button{
+    height: 50px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    padding: 5px;
+    margin: 10px;
+}
+#Get-Started-btn1{
+    width: 150px;
+    background-color: rgb(90, 3, 90);
+    color: white;
+    border-radius: 5px;
+    border: 2px solid rgb(90, 3, 90);
+    cursor: pointer;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+#Find-Sub-btn1{
+    width: 250px;
+    color: rgb(90, 3, 90);
+    border: 2px solid rgb(90, 3, 90);
+    border-radius: 5px;
+    background-color: white;
+    cursor: pointer;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+#Find-Sub-btn1:hover{
+    border: 3px solid rgb(90, 3, 90);
+}
+.HomePage-Part1-Complogo{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 15px;
+    margin: 40px 10px;
+}
+#logo-gm{
+    height: 20px;
+    width: auto;
+}
+#logo-openai{
+    height: 15px;
+    width: auto;
+}
+#logo-target{
+    height: 20px;
+    width: auto;
+}
+#logo-paramount{
+    height: 24px;
+    width: auto;
+}
+#logo-stripe{
+    height: 18px;
+    width: auto;
+}
+#logo-ibm{
+    height: 13px;
+    width: auto;
+}
+.HomePage-Part1-Video{
+    margin: 0 auto;
+}
+.HomePage-Part1-Video video{
+    height: 180px;
+    width: auto;
+    border-radius: 10px;
+    margin: 0 auto;
+}
+.HomePage-Part2 h1{
+    margin-top: 25px;
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+    padding: 20px 0px;
+}
+.comp-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
+    padding: 10px 0px;
+    margin-top: 10px 0px;
+    font-size: 6.5px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.Collaboration-Part{
+    display: flex;
+    flex-direction: column;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    width: 290px;
+    height: 280px;
+    margin: 0 auto;
+    background-color: #f8eefe;
+    border-radius: 20px;
+    margin-top: 50px;
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.3);
+    padding-left: 5px;
+    padding-right: 5px;
+    box-sizing: border-box;
+    gap: 5px;
+}
+.Collaboration-Heading{
+    display: flex;
+    gap: 1rem;
+    padding-bottom: 20px;
+    font-size: 8px;
+}
+.Collaboration-Details{
+    display: flex;
+    flex-direction: column;
+}
+.Collaboration-Detail1{   
+    padding-bottom: 20px;
+    font-size: 18px;
+}
+.Collaboration-Detail1 h3{
+    font-weight: 500;
+}
+.Collaboration-Detail2{
+    padding-bottom: 20px;   
+}
+.Collaboration-Detail2 h6{
+    font-size: 11px;
+    font-weight: 300;
+}
+.Collaboration-Detail3{
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+    gap: 5px;
+}
+#Percent1{
+    font-size: 25px;
+    font-weight: 600;
+    color: rgb(177, 64, 177);
+}
+#Collaboration-Info h6{
+    font-size: 11px;
+    font-weight: 300;
+}
+
+.Collaboration-Video video{
+    display: none;
+}
+.Project-Management-Part{
+    display: flex;
+    flex-direction: column;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;    
+    width: 290px;
+    height: 280px;
+    margin: 0 auto;
+    background-color: #f8eefe;
+    border-radius: 20px;
+    margin-top: 50px;
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.3);
+    padding-left: 5px;
+    padding-right: 5px;
+    gap: 5px;
+}
+.Project-Management-Heading{
+    display: flex;
+    gap: 1rem;
+    padding-bottom: 20px;
+    font-size: 8px;
+}
+.Project-Management-Details{
+    display: flex;
+    flex-direction: column;
+}
+.Project-Management-Detail1{
+    padding-bottom: 20px;
+    font-size: 18px;
+}
+.Project-Management-Detail1 h3{
+    font-weight: 500;
+}
+.Proeject-Management-Detail2{
+    padding-bottom: 20px;
+}
+.Project-Management-Detail2 h6{
+    font-size: 10.9px;
+    font-weight: 300;
+}
+.Project-Management-Detail3{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding-top: 10px;
+}
+#Percent2{
+    font-size: 25px;
+    font-weight: 600;
+    color: rgb(177, 64, 177);
+}
+#Project-Management-Info h6{
+    font-size: 11px;
+    font-weight: 300;
+    text-align: center;
+}
+.Project-Management-Video video{
+    display: none;
+}
+.Slack-AI-Part{
+    display: flex;
+    flex-direction: column;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    width: 290px;
+    height: 280px;
+    margin: 0 auto;
+    background-color: #f8eefe;
+    border-radius: 20px;
+    margin-top: 50px;
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.3);
+    padding-left: 5px;
+    padding-right: 5px;
+    gap: 5px;
+}
+.Slack-AI-Heading{
+    display: flex;
+    gap: 1rem;
+    padding-bottom: 20px;
+    font-size: 8px;
+}
+.Slack-AI-Details{
+    display: flex;
+    flex-direction: column;
+}
+.Slack-AI-Detail1{
+    padding-bottom: 20px;
+    font-size: 18px;
+}
+.Slack-AI-Detail1 h3{
+    font-weight: 500;
+}
+.Integration-Detail2{
+    padding-bottom: 20px;
+}
+.Slack-AI-Detail2 h6{
+    font-size: 11px;
+    font-weight: 300;
+}
+.Slack-AI-Detail3{
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px ;
+    gap: 5px;
+}
+#Percent3{
+    font-size: 25px;
+    font-weight: 600;
+    color: rgb(177, 64, 177);
+}
+#Slack-AI-Info h6{
+    font-size: 11px;
+    font-weight: 300;
+}
+.Slack-AI-Video video{
+    display: none;
+}
+.Integrations-Part{
+    display: flex;
+    flex-direction: column;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    width: 290px;
+    height: 280px;
+    margin: 0 auto;
+    background-color: #f8eefe;
+    border-radius: 20px;
+    margin-top: 50px;
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.3);
+    padding-left: 5px;
+    padding-right: 5px;
+    gap: 5px;
+}
+.Integrations-Heading{
+    display: flex;
+    gap: 1rem;
+    padding-bottom: 20px;
+    font-size: 8px;
+}
+.Integrations-Details{
+    display: flex;
+    flex-direction: column;
+}
+.Integrations-Detail1{
+    padding-bottom: 20px;
+    font-size: 18px;
+}
+.Integrations-Detail1 h3{
+    font-weight: 500;
+}
+.Integration-Detail2{
+    padding-bottom: 20px;
+}
+.Integrations-Detail2 h6{
+    font-size: 11px;
+    font-weight: 300;
+}
+.Integrations-Detail3{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding-top: 10px ;
+}
+#Percent4{
+    font-size: 25px;
+    font-weight: 600;
+    color: rgb(177, 64, 177);
+}
+#Integrations-Info h6{
+    font-size: 11px;
+    font-weight: 300;
+}
+.Integrations-Video video{
+    display: none;
+}
+.HomePage-Part3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 290px;
+    height: 430px;
+    padding: 10px 15px;
+    background: linear-gradient(to bottom, 
+        #e4f8fe,   /* Light Blue */
+        #efe0fd,   /* Light Pink */
+        #ffffff    /* White */
+    );
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border-radius: 20px;
+    box-shadow:
+    5px 0 10px rgba(0, 0, 0, 0.2),   /* Right */
+    -5px 0 10px rgba(0, 0, 0, 0.2),   /* Left */
+    0 5px 10px rgba(0, 0, 0, 0.2);   /* Bottom */
+
+}
+.Part3-Heading1{
+    display: flex;
+    align-self: flex-start;
+    gap: 15px;
+    font-size: 8px;
+    padding: 20px 0px;
+}
+.HomePage-Part3 h2{
+    align-self: flex-start;
+    font-size: 25px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 650;
+    padding-bottom: 20px;
+}
+.HomePage-Part3 p{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    align-self: flex-start;
+    font-size: 12px;
+}
+.HomePage-Part3 video{
+    margin-top: 20px;
+    height: 200px;
+    width: 260px;
+}
+.top-curved-background {
+    background-color: rgb(90, 3, 90);
+    height: 350px;
+    width: 100%;
+    border-top-left-radius: 50% 50px;
+    border-top-right-radius: 50% 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 40px;
+    color: white;
+    text-align: center;
+}
+.HomePage-Part4 h2{
+    color: black;
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+}
+.top-curved-background h3{
+    padding: 50px;
+    font-size: 30px;
+    transform: translateY(35px);
+}
+.Bussiness-Detail{
+    display: flex;
+    gap: 25px;
+    padding-top: 20px;
+}
+#Bussiness-Part1 h5, #Bussiness-Part2 h5, #Bussiness-Part3 h5{
+    font-size: 25px;
+    color: rgb(255, 120, 255);
+    padding-bottom: 10px;
+}
+#Bussiness-Part1 p, #Bussiness-Part2 p, #Bussiness-Part3 p{
+    font-size: 11px;
+    font-weight: bold;
+}
+.HomePage-Part5{
+    background-color: rgb(255, 224, 255);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0px;
+}
+.HomePage-Part5 h2{
+    font-size: 27px;
+    font-weight: 600;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    text-align: center;
+}
+#Leadership-Details{
+    padding-top: 20px;
+    padding-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+#Leadership-Details img{
+    height: 80px;
+    width: auto;
+}
+
+#Peoples-Love{
+    display: flex;
+    gap: 10px;
+}
+#Box{
+    height: 120px;
+    width: 130px;
+    background-color: rgb(90, 3, 90);
+    text-align: center;
+    border-radius: 20px;
+    padding: 10px 20px;
+}
+#Box h3{
+    font-size: 20px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding-bottom: 10px;
+    color: white;
+}
+#Box p{
+    font-size: 15px;
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.Box-Effect{
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+.Box-Effect:hover {
+    transform: scale(1.01); /* Bigger pop */
+    box-shadow:
+    0 12px 24px rgba(0, 0, 0, 0.4),   /* Main shadow */
+    0 0 10px rgba(0, 0, 0, 0.6), /* Outer glow */
+    0 0 20px rgba(0, 0, 0, 0.4); /* Soft glow */
+}
+.HomePage-Part6{
+    /*background-color: rgb(255, 224, 255);*/
+    background: linear-gradient(to bottom, rgb(255, 224, 255), white);
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.HomePage-Part6 h3{
+    font-size: 27px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: black;
+    text-align: center;
+}
+.HomePage-Part6 button{
+    height: 40px;
+    width: 130px;
+    font-size: 15px;
+    font-weight: 550;
+    background-color: white;
+    border: none;
+    border-radius: 5px;
+}
+#Get-Started-btn2{
+    color: rgb(90, 3, 90);
+    border: 1px solid rgb(90, 3, 90);
+}
+#Talk-to-Sales-btn2{
+    color: white;
+    background-color: rgb(90, 3, 90);
+    cursor: pointer;
+}
+#Get-Started-btn2:hover{
+    border: 2px solid rgb(90, 3, 90);
+}
+.comp-link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding-bottom: 25px;
+    font-size: 15px;
+}
+#instagram, #linkedin, #youtube, #twitter, #tiktok, #facebook{
+    cursor: pointer;
+}
+#instagram:hover, #linkedin:hover, #youtube:hover, #twitter:hover, #tiktok:hover, #facebook:hover{
+    color: blue;
+}
+footer{
+    text-align: center;
+    font-size: 12px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    padding: 200px 10px 10px 10px;
+}
+}

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Talk to Sales</title>
+     <link rel="icon" type="image/png" href="Images/favicon.ico">
+    <link rel="stylesheet" href="talk-to-sales.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo"><h1><img onclick="window.location.href='index.html'" src="Images/slack-logo.png"/></h1></div>
+            <div class="openMenu"><i class="fa fa-bars"></i></div>
+            <ul class="mainMenu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="pricing.html">Pricing</a></li>
+                <li><a href="login.html">Sign in</a></li>
+                <li><a href="talk-to-sales.html">TALK TO SALES</a></li>
+                <div class="closeMenu"><i class="fa fa-times"></i></div>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <div class="Talk-to-Sales">
+            <div class="Talk-to-Sales-Part1">
+                <div class="Talk-to-Sales-Part1-Left">
+                    <h2>Contact our sales team</h2>
+                    <p>We're happy to answer questions and get you acquainted with Slack.</p>
+                    <p><i class="fa-solid fa-check"></i> Schedule a demo</p>
+                    <p><i class="fa-solid fa-check"></i> Get pricing information</p>
+                    <p><i class="fa-solid fa-check"></i> Explore use cases for your team</p>
+                    <div id="Company-Reputation">
+                        <h3>Incredible companies use Slack</h3>
+                        <img src="Images/logo-swiggy.png" alt="Swiggy logo"/>&emsp;
+                        <img src="Images/logo-razorpay.png" alt="RazorPay logo"/><br>
+                        <img src="Images/logo-zomato.png" alt="Zomato logo"/>&emsp;
+                        <img src="Images/logo-meesho.png" alt="Meesho logo"/>
+                    </div>
+                </div>
+                <div class="Talk-to-Sales-Part1-Right">
+                    <form class="Form">
+                        <div id="Form-Elements">First name <p>*</p></div>
+                        <input class="First-Name" type="text" placeholder="Enter your first name" name="first-name" required/>
+                        <div id="Form-Elements">Surname <p>*</p></div>
+                        <input class="Surname" type="text" placeholder="Enter surname" name="surname" required/>
+                        <div id="Form-Elements">Work-email-address <p>*</p></div>
+                        <input type="email" placeholder="Enter email address" name="email" required/>
+                        <div id="Form-Elements">Role <p>*</p></div>
+                        <select required>
+                            <option disabled selected>Please select one</option>
+                            <option value="CXO">CXO</option>
+                            <option value="VP">VP</option>
+                            <option value="Director">Director</option>
+                            <option value="Manager">Manager</option>
+                            <option value="Contributor">Contributor</option>
+                        </select>
+                        <div id="Form-Elements">Country<p>*</p></div>
+                        <select required>
+                            <option disabled selected>Please select one</option>
+                            <option value="Inida">India</option>
+                            <option value="United States">United States</option>
+                            <option value="Australia">Australia</option>
+                            <option value="Japan">Japan</option>
+                            <option value="Germany">Germany</option>
+                            <option value="Brazil">Brazil</option>
+                            <option value="South Africa">South Africa</option>
+                            <option value="France">France</option>
+                            <option value="Canada">Canada</option>
+                            <option value="China">China</option>
+                        </select>
+                        <div id="Form-Elements">Company name <p>*</p></div>
+                        <input type="name" name="Company" placeholder="A1 Marketing Ltd." required/>
+                        <div id="Form-Elements">Company size </div>
+                        <select required>
+                            <option disabled selected>Please select one</option>
+                            <option value="1-15">1-15</option>
+                            <option value="16-100">16-100</option>
+                            <option value="101-500">101-500</option>
+                            <option value="501-1000">501-1000</option>
+                            <option value="1000+">1000+</option>
+                        </select>
+                        <div id="Form-Elements">Phone number <p>*</p></div>
+                        <input type="tel" id="mobile" name="mobile" pattern="[0-9]{10}" minlength="10" maxlength="10" required placeholder="Enter 10-digit number" />
+                        <div id="Form-Elements">How can our sales team help you? <p>*</p></div>
+                        <select required>
+                            <option disabled selected>Please select one</option>
+                            <option>I want to evaluate Slack for my organization</option>
+                            <option>I want to understand which Slack subscription is right for me</option>
+                            <option>I want to buy licences or upgrade</option>
+                            <option>I have a product question</option>
+                            <option>I need a compliance plan</option>
+                        </select><br><br>
+                        Anything else? (optional)
+                        <input id="optional-box" type="text" placeholder="What challenges are you looking to overcome with Slack?"></input><br>
+                        <p>By registering, you confirm that you agree to the processing of your personal data by Salesforce as described in the Privacy Statement.</p>
+                        <p id="required-field">Fields marked with an asterisk (*) are required.</p>
+                        <button type="submit">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="comp-link">
+            <i id="instagram" class="fa-brands fa-instagram"></i>
+            <i id="linkedin" class="fa-brands fa-linkedin"></i>
+            <i id="twitter" class="fa-brands fa-x-twitter"></i>
+            <i id="facebook" class="fa-brands fa-square-facebook"></i>
+            <i id="youtube" class="fa-brands fa-youtube"></i>
+            <i id="tiktok" class="fa-brands fa-tiktok"></i>
+        </div>
+        <div>&copy 2025 Slack Technologies, LLC, a Salesforce company. All rights reserved.</div>
+    </footer>
+    <script>
+        let menuList = document.getElementById("menuList")
+        menuList.style.maxHeight = "0px";
+
+        function toggleMenu(){
+            if(menuList.style.maxHeight == "0px")
+            {
+                menuList.style.maxHeight = "300px";
+            }
+            else{
+                menuList.style.maxHeight = "0px";
+            }
+        }        
+    </script>
+        <script src="https://kit.fontawesome.com/f8e1a90484.js" crossorigin="anonymous">
+    </script>
+    <script>
+        const mainMenu = document.querySelector('.mainMenu');
+const closeMenu = document.querySelector('.closeMenu');
+const openMenu = document.querySelector('.openMenu');
+const menu_items = document.querySelectorAll('nav .mainMenu li a');
+
+
+
+
+openMenu.addEventListener('click',show);
+closeMenu.addEventListener('click',close);
+
+// close menu when you click on a menu item 
+menu_items.forEach(item => {
+    item.addEventListener('click',function(){
+        close();
+    })
+})
+
+function show(){
+    mainMenu.style.display = 'flex';
+    mainMenu.style.top = '0';
+}
+function close(){
+    mainMenu.style.top = '-100%';
+}
+
+    </script>
+</body>
+</html>
